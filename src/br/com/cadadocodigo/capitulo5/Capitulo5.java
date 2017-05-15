@@ -7,8 +7,12 @@ import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+// Import statico
+import static java.util.Comparator.comparing;
 
 /**
  * Created by heitorh3 on 24/06/2016.
@@ -34,31 +38,46 @@ public class Capitulo5 {
             }
         };
 
-        Comparator<Usuario> comp = (u1 ,u2) -> u1.getNome().compareTo(u2.getNome());
-
-        Collections.sort(usuarios, (usr1 ,usr2) -> String.CASE_INSENSITIVE_ORDER.compare(usr1.getNome(), usr2.getNome()));
-
-        usuarios.sort((u1, u2)-> u1.getNome().compareTo(u2.getNome()));
-
-        usuarios.forEach(usuario -> System.out.println(usuario.getNome()));
-
         Collections.sort(usuarios, comparator);
 
-        //Simplificando ainda mais a comparação
+        Comparator<Usuario> comp = (u1 ,u2) -> u1.getNome().compareTo(u2.getNome());
+        Collections.sort(usuarios, comp);
 
+        //Simplificando ainda mais a comparação
         Comparator<Usuario> comparator1 = Comparator.comparing(u -> u.getNome());
         usuarios.sort(comparator1);
 
-        // ou assim
+        usuarios.sort((u1, u2)-> u1.getNome().compareTo(u2.getNome()));
 
+        // ou assim
         usuarios.sort(Comparator.comparing(usuario -> usuario.getNome()));
+
+        //com uso do static import
+        usuarios.sort(comparing(u -> u.getNome()));
+        usuarios.forEach(u -> System.out.println("Comparing : " + u.getNome()));
+
+        //Usando comparators que já existem
+        Collections.sort(usuarios, (usr1 ,usr2) -> String.CASE_INSENSITIVE_ORDER.compare(usr1.getNome(), usr2.getNome()));
+
+        usuarios.forEach(usuario -> System.out.println(usuario.getNome()));
 
         List<String> palavras =
                 Arrays.asList("Casa do Código", "Alura", "Caelum");
 
         palavras.sort(Comparator.naturalOrder());
-
         System.out.println(palavras);
+
+        System.out.println("************** Ordenando os usuários pela quantidade de pontos ***************");
+        //Ordenação dos usuários pela quantidade de pontos que cada um tem
+        usuarios.sort(Comparator.comparing(u -> u.getPontos()));
+
+        //Pode ser feitor assim também
+        //O método comparingInt, que recebe ToIntFunction em vez de Function, evitando um Autoboxing nos lambdas
+        usuarios.sort(Comparator.comparingInt(u -> u.getPontos()));
+
+        usuarios.forEach(System.out::println);
+        System.out.println("************** Ordenando os usuários pela quantidade de pontos ***************");
+
 
         usuarios.forEach(usuario -> usuario.tornarModerador());
         usuarios.forEach(Usuario::tornarModerador);

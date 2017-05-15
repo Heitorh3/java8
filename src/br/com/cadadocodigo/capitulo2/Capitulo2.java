@@ -53,33 +53,7 @@ public class Capitulo2 {
         System.out.println("############ Executando ações com Lambda #################");
         usuarios.forEach(user -> user.tornarModerador());
 
-        System.out.println("############ Thread sem Lambda #################");
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i <= 10; i++){
-                    System.out.println("Thread sem Lambda: " + i);
-                }
-            }
-        };
-        new Thread(runnable).start();
-
-        System.out.println("############ Thread com Lambda #################");
-        Runnable r = ()-> {
-            for (int i = 0; i <= 3; i++){
-                System.out.println(i);
-            }
-        };
-        new Thread(r).start();
-
-        System.out.println("############ Thread com Lambda de uma forma resumida #################");
-
-        new Thread(()->{
-            for (int i = 0; i <= 3; i++){
-                //System.out.println(i);
-            }
-        }).start();
-
+        System.out.println("############ Interface funcional com lambda e sem lambda #################");
         //Interface funcional com lambda e sem lambda
         Validator<String> validarCEP = new Validator<String>() {
             @Override

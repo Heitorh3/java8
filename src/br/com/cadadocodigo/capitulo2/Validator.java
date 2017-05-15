@@ -3,9 +3,9 @@ package br.com.cadadocodigo.capitulo2;
 /**
  * Created by heitorh3 on 24/06/2016.
  *
- * Essa anotação serve apenas para que ninguém torne essa interface em nãofuncional acidentalmente.
+ * Essa anotação (@FunctionalInterface) serve apenas para que ninguém torne essa interface em nãofuncional acidentalmente.
  * Ela é opcional justamente para que as interfaces das antigas bibliotecas possam também ser tratadas como lambdas,
- * independente da anota-ção, bastando a existência de um único método abstrato.
+ * independente da anotação, bastando a existência de um único método abstrato.
  *
  */
 

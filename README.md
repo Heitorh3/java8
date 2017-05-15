@@ -1,1 +1,1 @@
-# java8
+# Estudo sobre lambda Java 8

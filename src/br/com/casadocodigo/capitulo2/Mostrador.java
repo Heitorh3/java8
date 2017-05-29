@@ -1,6 +1,6 @@
-package br.com.cadadocodigo.capitulo2;
+package br.com.casadocodigo.capitulo2;
 
-import br.com.cadadocodigo.domain.Usuario;
+import br.com.casadocodigo.domain.Usuario;
 
 import java.util.function.Consumer;
 

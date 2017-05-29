@@ -1,10 +1,8 @@
-package br.com.cadadocodigo.capitulo4;
+package br.com.casadocodigo.capitulo4;
 
-import br.com.cadadocodigo.capitulo2.Validator;
-import br.com.cadadocodigo.domain.Usuario;
+import br.com.casadocodigo.domain.Usuario;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;

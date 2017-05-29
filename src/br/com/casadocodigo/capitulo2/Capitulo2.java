@@ -1,8 +1,7 @@
-package br.com.cadadocodigo.capitulo2;
+package br.com.casadocodigo.capitulo2;
 
-import br.com.cadadocodigo.domain.Usuario;
+import br.com.casadocodigo.domain.Usuario;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;

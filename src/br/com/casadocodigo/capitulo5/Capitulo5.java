@@ -1,13 +1,11 @@
-package br.com.cadadocodigo.capitulo5;
+package br.com.casadocodigo.capitulo5;
 
-import br.com.cadadocodigo.domain.Usuario;
+import br.com.casadocodigo.domain.Usuario;
 
-import javax.print.DocFlavor;
 import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
-import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -26,11 +24,13 @@ public class Capitulo5 {
         Usuario user1 = new Usuario("Paulo Silveira", 150);
         Usuario user2 = new Usuario("Rodrigo Turini", 120);
         Usuario user3 = new Usuario("Guilherme Silveira", 90);
+        Usuario user4 = new Usuario("Anderson Lima", 280);
 
         List<Usuario> usuarios = new ArrayList<Usuario>();
         usuarios.add(user1);
         usuarios.add(user2);
         usuarios.add(user3);
+        usuarios.add(user4);
 
         Comparator<Usuario> comparator = new Comparator<Usuario>() {
             @Override
@@ -71,6 +71,15 @@ public class Capitulo5 {
         System.out.println("************** Ordenando os usuários pela quantidade de pontos ***************");
         //Ordenação dos usuários pela quantidade de pontos que cada um tem
         usuarios.sort(Comparator.comparing(u -> u.getPontos()));
+
+        System.out.println("************** Conhecendo melhor o Comparator.comparing ***************");
+        Function<Usuario, String> extraiNome = u -> u.getNome();
+        Comparator<Usuario> comparatorNome = Comparator.comparing(extraiNome);
+        usuarios.sort(comparatorNome);
+
+        //usuarios.sort(Comparator.comparing(u -> u.getNome()));
+        usuarios.forEach(System.out::println);
+        System.out.println("************** Conhecendo melhor o Comparator.comparing ***************");
 
         //Pode ser feitor assim também
         //O método comparingInt, que recebe ToIntFunction em vez de Function, evitando um Autoboxing nos lambdas
@@ -133,6 +142,7 @@ public class Capitulo5 {
                 .orElse(0.0);
 
         System.out.println(media);
+
 
     }
 }

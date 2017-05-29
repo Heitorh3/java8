@@ -1,4 +1,4 @@
-package br.com.cadadocodigo.capitulo3;
+package br.com.casadocodigo.capitulo3;
 
 /**
  * Created by heitorh3 on 15/05/2017.

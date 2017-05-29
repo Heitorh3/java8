@@ -2,10 +2,7 @@ package br.com.casadocodigo.capitulo7;
 
 import br.com.casadocodigo.domain.Usuario;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -103,7 +100,28 @@ public class Capitulo7 {
         */
         IntStream intStream = usuarios.stream().mapToInt(Usuario::getPontos);
 
-        IntStream stream = usuarios.stream()
-                .mapToInt(Usuario::getPontos);
+        /* Pontuação média*/
+
+        double mediaD = usuarios.stream()
+                .mapToInt(Usuario::getPontos)
+                .average()
+                .getAsDouble();
+        System.out.println("Média: " + mediaD);
+
+        OptionalDouble media = usuarios.stream()
+                .mapToInt(Usuario::getPontos)
+                .average();
+        double pontuacaoMedia = media.orElse(0.0);
+
+        //versão simplificada
+        double mediaPontuacao = usuarios.stream()
+                .mapToInt(Usuario::getPontos)
+                .average()
+                .orElse(0.0);
+
+        Optional<String> maxNome = usuarios
+                .stream()
+                .max(Comparator.comparingInt(Usuario::getPontos))
+                .map(Usuario::getNome);
     }
 }

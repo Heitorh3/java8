@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3371e08f-9ffe-4a20-a65e-9efc57a2ab6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo7/Capitulo7.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo2/Capitulo2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo2/Capitulo2$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo2/Capitulo2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo2/Mostrador.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo2/Validator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo3/Capitulo3$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo3/Capitulo3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo3/CapturadeVariaveis.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo4/Capitulo4$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo4/Capitulo4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo5/Capitulo5$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/capitulo5/Capitulo5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java8/br/com/cadadocodigo/domain/Usuario.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/capitulo2/Capitulo2.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo2/Capitulo2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/capitulo2/Mostrador.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo2/Mostrador.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/capitulo2/Validator.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo2/Validator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/capitulo3/Capitulo3.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo3/Capitulo3.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/capitulo3/CapturadeVariaveis.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo3/CapturadeVariaveis.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/capitulo4/Capitulo4.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo4/Capitulo4.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/capitulo5/Capitulo5.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo5/Capitulo5.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/capitulo6/Capitulo6.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo6/Capitulo6.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/cadadocodigo/domain/Usuario.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/domain/Usuario.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo7/Capitulo7.java" afterPath="$PROJECT_DIR$/src/br/com/casadocodigo/capitulo7/Capitulo7.java" />
     </list>
     <ignored path="Java8.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,8 +26,8 @@
       <file leaf-file-name="Capitulo7.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/casadocodigo/capitulo7/Capitulo7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="102" column="10" lean-forward="true" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+            <state relative-caret-position="538">
+              <caret line="119" column="29" lean-forward="true" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -635,7 +612,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1082,8 +1059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/casadocodigo/capitulo7/Capitulo7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="102" column="10" lean-forward="true" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+        <state relative-caret-position="538">
+          <caret line="119" column="29" lean-forward="true" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
